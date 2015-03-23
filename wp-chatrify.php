@@ -142,7 +142,7 @@ class Chatrify {
 			<div class="metabox-holder">
 				<div class="postbox">
 					<h3>Do you already have a Chatrify account?</h3>
-					<div class="postbox_content">
+					<div class="postbox_content" style="padding:10px">
 					<ul id="mc_choice_account">
 					<li><input type="radio" name="choice_account" id="choice_account_1" checked="checked"> <label for="choice_account_1">Yes, I already have a Chatrify account</label></li>
 					<li><input type="radio" name="choice_account" id="choice_account_0"> <label for="choice_account_0">No, I want to create one</label></li>
@@ -284,7 +284,7 @@ class Chatrify {
 	{
 		if (is_null($this->plugin_url))
 		{
-			$this->plugin_url = WP_PLUGIN_URL.'/wp-chatrify';
+			$this->plugin_url = WP_PLUGIN_URL.'/chatrify-live-chat';
 		}
 
 		return $this->plugin_url;
