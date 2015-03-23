@@ -4,7 +4,7 @@ Tags: live support, live chat, live chat software, online support, ecommerce, in
 online chat, php live chat
 Stable tag: 3.3
 Requires at least: 3.3
-Tested up to: 4.1.0
+Tested up to: 4.1.1
 
 Chatrify Live chat software for Wordpress plugin that integrate with Chatrify - an application for online customer service and support.
 
