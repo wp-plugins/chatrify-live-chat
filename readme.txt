@@ -10,11 +10,11 @@ Chatrify Live chat software for Wordpress plugin that integrate with Chatrify - 
 
 == Description ==
 
-= **WHAT IS CHATRIFY?** =
+= WHAT IS CHATRIFY? =
 Chatrify helps you to create meaningful, real time customer engagement that help businesses increase conversions and provide effective customer support.
 You can now actually interact with the visitors that come to your website just like what you will do when customers walk into your retail outlet or to your office. Each visitor comes with a unique problem and Chatrify give you the opportunity to be there to address his or her concerns instantly in the most effective way. Chatrify is the most user-friendly live chat support software that lets you provide outstanding customer support to impress your customers and thereby increase your overall online business conversions.
 
-= **WHY CHATRIFY?** =
+= WHY CHATRIFY? =
 
 * **Simplicity:**
 At Chatrify, we like to keep things simple and easy. We have well thought out simple interface, user-friendly process and quick setup options. You can have Chatrify up and running in your website in just few minutes.
