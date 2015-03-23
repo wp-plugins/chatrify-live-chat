@@ -2,7 +2,9 @@
 /*
 Plugin Name: Chatrify Live Chat
 Plugin URI: https://www.chatrify.com/
-Version: 1.0.0
+Author: Chatrify
+Version: 1.3.6
+Author URI: http://www.chatrify.com/?iref=wp_plugin
 Description: Wordpress Plugin for chatrify
 */
 
