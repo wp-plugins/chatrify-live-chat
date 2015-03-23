@@ -69,8 +69,8 @@ class Chatrify {
 
 	public function load_scripts()
 	{
-		wp_enqueue_script('chatrify', $this->get_plugin_url().'/js/chatrify.js', 'jquery', $this->get_plugin_version(), true);
-		wp_enqueue_style('chatrify', $this->get_plugin_url().'/css/chatrify.css', false, $this->get_plugin_version());
+		wp_enqueue_script('chatrify', $this->get_plugin_url().'/chatrify.js', 'jquery', $this->get_plugin_version(), true);
+		wp_enqueue_style('chatrify', $this->get_plugin_url().'/chatrify.css', false, $this->get_plugin_version());
 	}
 
 	public function admin_menu()
@@ -81,7 +81,7 @@ class Chatrify {
 			'administrator',
 			'chatrify',
 			array($this, 'chatrify_settings_page'),
-			$this->get_plugin_url().'/images/favicon.png'
+			$this->get_plugin_url().'/favicon.png'
 		);
 
 		add_submenu_page(
@@ -126,7 +126,7 @@ class Chatrify {
 		<div class="wrap">
 
 			<div id="mc_logo">
-				<img src="<?php echo $this->get_plugin_url(); ?>/images/logo.png" />
+				<img src="<?php echo $this->get_plugin_url(); ?>/logo.png" />
 			</div>
 			<div class="clear"></div> 
 
