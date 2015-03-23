@@ -40,8 +40,8 @@ Download Chatrify Live Chat plugin now and <a href="https://app.chatrify.com/sig
 == Screenshots ==
 
 1. Chat widget on your website - active chat
-2. Set up Chatrify account - Link Up
-3. Chatrify Configuration - Enter email id
+2. Chatrify Configuration for existing Customer - Link up
+3. Chatrify Configuration for new Customer - Enter details
 4. Widget Customization from Dashboard 
 
 == Frequently Asked Questions ==
