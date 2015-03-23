@@ -156,7 +156,7 @@ class Chatrify {
 			<div class="metabox-holder" id="chatrify_already_have" style="display:none">
 
 				<?php if ($this->is_installed()): ?>
-				<div class="postbox">
+				<div class="postbox" style="padding:10px">
 				<h3><?php echo _e('Sign in to Chatrify'); ?></h3>
 				<div class="postbox_content">
 				<p><?php echo _e('Sign in to Chatrify and start chatting with your customers!'); ?></p>
@@ -169,7 +169,7 @@ class Chatrify {
 				<div class="postbox">
 				<form method="post" action="?page=chatrify_settings">
 					<h3>Chatrify account</h3>
-					<div class="postbox_content">
+					<div class="postbox_content" style="padding:10px">
 					<table class="form-table">
 					<tr>
 					<th scope="row"><label for="chatrify_login">My Chatrify login is:</label></th>
@@ -192,7 +192,7 @@ class Chatrify {
 				<div id="advanced" class="postbox" style="display:none">
 				<form method="post" action="?page=chatrify_settings">
 					<h3>Advanced settings</h3>
-					<div class="postbox_content">
+					<div class="postbox_content" style="padding:10px">
 					<table class="form-table">
 					<tr>
 					<th scope="row"><label for="skill">Group:</label></th>
@@ -221,7 +221,7 @@ class Chatrify {
 				<div class="postbox">
 				<form method="post" action="?page=chatrify_settings">
 					<h3>Create new Chatrify account</h3>
-					<div class="postbox_content">
+					<div class="postbox_content" style="padding:10px">
 
 					<?php
 					global $current_user;
