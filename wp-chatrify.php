@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Chatrify 
+Plugin Name: Chatrify Live Chat
 Plugin URI: https://www.chatrify.com/
 Version: 1.0.0
 Description: Wordpress Plugin for chatrify
