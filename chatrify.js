@@ -95,41 +95,43 @@ var Chatrify = {
 	{
 		$('#chatrify_already_have form').submit(function()
 		{
-			if (parseInt($('#license_number').val()) == 0)
+			if ($('#license_number').val().toString() !== "0") {
+				return;
+			}
+
+			var login = $.trim($('#chatrify_login').val());
+			if (!login.length)
 			{
-				var login = $.trim($('#chatrify_login').val());
-				if (!login.length)
-				{
-					$('#chatrify_login').focus();
-					return false;
-				}
-
-				$('#chatrify_already_have .ajax_message').removeClass('message').addClass('wait').html('Please wait&hellip;');
-				
-				$.ajax({
-					url: Chatrify.server_url + '/api/logindetail/?email='+login+'&jsoncallback=?',
-					type: "GET",
-					dataType: 'jsonp',
-					cache: false,
-					success: function (data, status, error) {
-
-						if (data.status == 'false') {
-							$('#chatrify_already_have .ajax_message').removeClass('wait').addClass('message').html('Incorrect Chatrify login.');
-							$('#chatrify_login').focus();
-							return false;
-						} else {
-							$('#license_number').val(data.company_uid);
-							$('#chatrify_already_have form').submit();
-						}
-
-					},
-					error: function (data, status, error) {
-						$('#chatrify_already_have .ajax_message').removeClass('wait').addClass('message').html('Try again.');
-						$('#chatrify_login').focus();
-					}
-				});
+				$('#chatrify_login').focus();
 				return false;
 			}
+
+			$('#chatrify_already_have .ajax_message').removeClass('message').addClass('wait').html('Please wait&hellip;');
+			
+			$.ajax({
+				url: Chatrify.server_url + '/api/logindetail/?email='+login+'&jsoncallback=?',
+				type: "GET",
+				dataType: 'jsonp',
+				cache: false,
+				success: function (data, status, error) {
+
+					if (data.status == 'false') {
+						$('#chatrify_already_have .ajax_message').removeClass('wait').addClass('message').html('Incorrect Chatrify login.');
+						$('#chatrify_login').focus();
+						return false;
+					} else {
+						$('#license_number').val(data.company_uid);
+						$('#chatrify_already_have form').submit();
+					}
+
+				},
+				error: function (data, status, error) {
+					$('#chatrify_already_have .ajax_message').removeClass('wait').addClass('message').html('Try again.');
+					$('#chatrify_login').focus();
+				}
+			});
+			return false;
+
 		});		
 	},
 
